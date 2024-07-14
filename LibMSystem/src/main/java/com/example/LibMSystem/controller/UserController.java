@@ -16,13 +16,13 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/addStudent")
-    public User addUser(@RequestBody UserRequest userRequest)
+    public User addStudent(@RequestBody UserRequest userRequest)
     {
         return userService.addStudent(userRequest);
     }
 
 //    @PostMapping("/addAdmin")
-//    public User addUser(@RequestBody UserRequest userRequest)
+//    public User addAdmin(@RequestBody UserRequest userRequest)
 //    {
 //        return null;
 //    }
