@@ -87,7 +87,7 @@ public class TxnService {
         bookService.updateBookData(bookFromDb);
         return fine;
     }
-    private int calculateFine(Txn txn, int securityAmount) {
+    public int calculateFine(Txn txn, int securityAmount) {
         long issueDate = txn.getCreatedOn().getTime();
         long returnDate = System.currentTimeMillis();
         long timeDiff = returnDate-issueDate;
