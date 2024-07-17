@@ -38,4 +38,6 @@ public class Txn {
     @Enumerated
     private TxnStatus txnStatus;
 
+    private int settlementAmount;
+
 }
