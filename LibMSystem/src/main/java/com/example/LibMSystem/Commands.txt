@@ -16,3 +16,8 @@ http://localhost:8081/user/addStudent
     "email":"aalok@gmail.com",
     "address":"India"
 }
+
+//Kafka
+go to C:/kafka -> Open cmd
+start Zookeeper : .\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+start Kafka : .\bin\windows\kafka-server-start.bat .\config\server.properties
