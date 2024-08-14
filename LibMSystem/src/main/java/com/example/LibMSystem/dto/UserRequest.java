@@ -15,6 +15,8 @@ public class UserRequest {
     private String userName;
     @NotBlank(message = "PhoneNo must be unique")
     private String phoneNo;
+    @NotBlank(message = "Password incorrect")
+    private String password;
     private String email;
     private String address;
     public User toUser()
